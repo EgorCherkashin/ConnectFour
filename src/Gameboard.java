@@ -41,7 +41,7 @@ public class Gameboard {
         values[column][top].setValue(value);
     }
 
-    private int findPosition(int column){
+    public int findPosition(int column){
         for(int i = 5; i > 0; i--){
             if(values[column][i].getPlayer() == 0){
                 return i;
